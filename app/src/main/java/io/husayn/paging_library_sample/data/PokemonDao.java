@@ -1,4 +1,4 @@
-package io.husayn.paging_library_sample;
+package io.husayn.paging_library_sample.data;
 
 import android.arch.paging.LivePagedListProvider;
 import android.arch.persistence.room.Dao;
@@ -6,10 +6,10 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
 @Dao
-interface PokemonDao {
+public interface PokemonDao {
 
     @Query("SELECT * FROM pokemon ORDER BY id ASC")
-    LivePagedListProvider<Integer, Pokemon> pokemons();
+    public LivePagedListProvider<Integer, Pokemon> pokemons();
 
 
     @Insert

@@ -1,10 +1,13 @@
-package io.husayn.paging_library_sample;
+package io.husayn.paging_library_sample.listing;
 
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import io.husayn.paging_library_sample.R;
+import io.husayn.paging_library_sample.data.Pokemon;
 
 class PokemonViewHolder extends RecyclerView.ViewHolder {
 

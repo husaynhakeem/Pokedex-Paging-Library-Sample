@@ -1,9 +1,14 @@
-package io.husayn.paging_library_sample;
+package io.husayn.paging_library_sample.listing;
 
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
 import android.arch.paging.PagedList;
+
+import io.husayn.paging_library_sample.PokemonApplication;
+import io.husayn.paging_library_sample.data.Pokemon;
+import io.husayn.paging_library_sample.data.PokemonDao;
+import io.husayn.paging_library_sample.data.PokemonDataBase;
 
 public class MainViewModel extends ViewModel {
 

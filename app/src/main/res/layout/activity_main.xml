@@ -4,4 +4,4 @@
     android:id="@+id/rv_pokemons"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.husayn.paging_library_sample.MainActivity" />
+    tools:context="io.husayn.paging_library_sample.listing.MainActivity" />

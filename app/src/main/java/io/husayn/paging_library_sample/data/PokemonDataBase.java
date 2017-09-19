@@ -1,4 +1,4 @@
-package io.husayn.paging_library_sample;
+package io.husayn.paging_library_sample.data;
 
 
 import android.arch.persistence.db.SupportSQLiteDatabase;

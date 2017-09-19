@@ -1,4 +1,4 @@
-package io.husayn.paging_library_sample;
+package io.husayn.paging_library_sample.data;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -7,7 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.recyclerview.extensions.DiffCallback;
 
 @Entity
-class Pokemon {
+public class Pokemon {
 
     @PrimaryKey
     @ColumnInfo(name = "id")

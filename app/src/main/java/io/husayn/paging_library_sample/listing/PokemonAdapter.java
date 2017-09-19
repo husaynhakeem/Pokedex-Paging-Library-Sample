@@ -1,8 +1,15 @@
-package io.husayn.paging_library_sample;
+package io.husayn.paging_library_sample.listing;
 
 
 import android.arch.paging.PagedListAdapter;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+
+import io.husayn.paging_library_sample.R;
+import io.husayn.paging_library_sample.data.Pokemon;
+
+import static io.husayn.paging_library_sample.PokemonApplication.getContext;
 
 class PokemonAdapter extends PagedListAdapter<Pokemon, PokemonViewHolder> {
 
@@ -13,7 +20,8 @@ class PokemonAdapter extends PagedListAdapter<Pokemon, PokemonViewHolder> {
 
     @Override
     public PokemonViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return null;
+        View itemView = LayoutInflater.from(getContext()).inflate(R.layout.item_pokemon, parent, false);
+        return new PokemonViewHolder(itemView);
     }
 
     @Override
@@ -26,4 +34,6 @@ class PokemonAdapter extends PagedListAdapter<Pokemon, PokemonViewHolder> {
             holder.clear();
         }
     }
+
+
 }
