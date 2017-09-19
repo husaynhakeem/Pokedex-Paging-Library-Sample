@@ -26,5 +26,18 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // LiveData and ViewModel
+    compile 'android.arch.lifecycle:runtime:1.0.0'
+    compile 'android.arch.lifecycle:extensions:1.0.0-alpha9-1'
+    compile 'android.arch.lifecycle:compiler:1.0.0-alpha9-1'
+
+    // Room
+    compile 'android.arch.persistence.room:runtime:1.0.0-alpha9-1'
+    compile 'android.arch.persistence.room:compiler:1.0.0-alpha9-1'
+
+    // Paging
+    compile 'android.arch.paging:runtime:1.0.0-alpha1'
+
     testCompile 'junit:junit:4.12'
 }
