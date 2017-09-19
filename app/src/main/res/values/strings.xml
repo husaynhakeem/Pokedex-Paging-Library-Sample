@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Paging-Library-Sample</string>
+    <string name="iv_pokemon_cd">pokemon sprite</string>
 </resources>

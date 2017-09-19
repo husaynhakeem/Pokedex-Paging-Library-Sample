@@ -1,21 +1,37 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 25
     buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "io.husayn.paging_library_sample"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        jackOptions {
+            enabled true
+        }
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/compiler_main.kotlin_module'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "6g"
     }
 }
 
@@ -24,7 +40,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 
     // LiveData and ViewModel
@@ -35,9 +51,17 @@ dependencies {
     // Room
     compile 'android.arch.persistence.room:runtime:1.0.0-alpha9-1'
     compile 'android.arch.persistence.room:compiler:1.0.0-alpha9-1'
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0-alpha9-1"
 
     // Paging
     compile 'android.arch.paging:runtime:1.0.0-alpha1'
+
+    // Rx
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    // Backwards compatibility from Java 8 features
+    compile 'com.annimon:stream:1.1.8'
 
     testCompile 'junit:junit:4.12'
 }
