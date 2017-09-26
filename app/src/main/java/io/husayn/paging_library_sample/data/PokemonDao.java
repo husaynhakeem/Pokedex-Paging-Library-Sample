@@ -9,9 +9,14 @@ import android.arch.persistence.room.Query;
 public interface PokemonDao {
 
     @Query("SELECT * FROM pokemon ORDER BY id ASC")
-    public LivePagedListProvider<Integer, Pokemon> pokemons();
+    LivePagedListProvider<Integer, Pokemon> pokemons();
 
+    @Query("SELECT COUNT(*) FROM pokemon")
+    Integer pokemonsCount();
 
     @Insert
     void insert(Pokemon... pokemons);
+
+    @Query("DELETE FROM pokemon")
+    void deleteAll();
 }
