@@ -14,6 +14,7 @@ import static junit.framework.Assert.assertEquals;
  */
 public class PokemonDataBaseShould {
 
+    public static final String ANY_POKEMON_NAME = "pokemon";
     private Context context = InstrumentationRegistry.getTargetContext();
     private PokemonDao dao;
 
@@ -45,7 +46,7 @@ public class PokemonDataBaseShould {
     private Pokemon[] anyPokemons() {
         Pokemon[] pokemons = new Pokemon[10];
         for (int i = 0; i < 10; i++)
-            pokemons[i] = new Pokemon(i, "pokemon");
+            pokemons[i] = new Pokemon(i, ANY_POKEMON_NAME);
         return pokemons;
     }
 }
