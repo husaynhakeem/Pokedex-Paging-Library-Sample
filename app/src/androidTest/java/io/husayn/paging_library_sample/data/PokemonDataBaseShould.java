@@ -31,13 +31,21 @@ public class PokemonDataBaseShould {
 
     @Test
     public void returnCorrectSize_whenDatabaseIsFull() throws Exception {
+        dao.insert(anyPokemons());
         int dbSize = dao.pokemonsCount();
-        assertEquals(0, dbSize);
+        assertEquals(10, dbSize);
     }
 
     @After
     public void tearDown() throws Exception {
         if (dao != null)
             dao.deleteAll();
+    }
+
+    private Pokemon[] anyPokemons() {
+        Pokemon[] pokemons = new Pokemon[10];
+        for (int i = 0; i < 10; i++)
+            pokemons[i] = new Pokemon(i, "pokemon");
+        return pokemons;
     }
 }
