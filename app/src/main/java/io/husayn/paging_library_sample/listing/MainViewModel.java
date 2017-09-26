@@ -12,14 +12,14 @@ import io.husayn.paging_library_sample.data.PokemonDataBase;
 
 public class MainViewModel extends ViewModel {
 
-    public static final int INITIAL_LOAD_KEY = 0;
-    public static final int PAGE_SIZE = 20;
-    public static final int PREFETCH_DISTANCE = 5;
+    private static final int INITIAL_LOAD_KEY = 0;
+    private static final int PAGE_SIZE = 20;
+    private static final int PREFETCH_DISTANCE = 5;
 
-    public PokemonDao pokemonDao = PokemonDataBase.getInstance(PokemonApplication.getContext()).pokemonDao();
-    public final LiveData<PagedList<Pokemon>> pokemonList;
+    final LiveData<PagedList<Pokemon>> pokemonList;
 
     public MainViewModel() {
+        PokemonDao pokemonDao = PokemonDataBase.getInstance(PokemonApplication.getContext()).pokemonDao();
         pokemonList = pokemonDao.pokemons().create(INITIAL_LOAD_KEY, new PagedList.Config.Builder()
                 .setPageSize(PAGE_SIZE)
                 .setPrefetchDistance(PREFETCH_DISTANCE)

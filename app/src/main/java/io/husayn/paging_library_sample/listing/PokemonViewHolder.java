@@ -11,8 +11,9 @@ import io.husayn.paging_library_sample.data.Pokemon;
 
 class PokemonViewHolder extends RecyclerView.ViewHolder {
 
-    ImageView pokemonSpriteImageView;
-    TextView pokemonNameTextView;
+    private TextView pokemonIdTextView;
+    private ImageView pokemonSpriteImageView;
+    private TextView pokemonNameTextView;
 
     public PokemonViewHolder(View itemView) {
         super(itemView);
@@ -23,6 +24,7 @@ class PokemonViewHolder extends RecyclerView.ViewHolder {
 
     public void bindTo(Pokemon pokemon) {
         itemView.setTag(pokemon.id);
+        pokemonIdTextView.setText(itemView.getContext().getString(R.id.pokemon_id, pokemon.id));
         pokemonNameTextView.setText(pokemon.name);
     }
 
