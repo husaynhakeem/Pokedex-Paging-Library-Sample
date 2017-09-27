@@ -11,8 +11,6 @@ import io.husayn.paging_library_sample.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final int SPAN_COUNT = 2;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rv_pokemons);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, SPAN_COUNT));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, getResources().getInteger(R.integer.span_count)));
         recyclerView.setAdapter(adapter);
     }
 }

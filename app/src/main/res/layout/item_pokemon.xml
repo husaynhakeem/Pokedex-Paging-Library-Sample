@@ -35,7 +35,7 @@
             app:layout_constraintLeft_toRightOf="parent"
             app:layout_constraintRight_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_pokemon_id"
-            tools:src="@mipmap/ic_launcher"/>
+            tools:src="@drawable/pokedex"/>
 
         <TextView
             android:id="@+id/tv_pokemon"
