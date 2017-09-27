@@ -34,6 +34,4 @@ class PokemonAdapter extends PagedListAdapter<Pokemon, PokemonViewHolder> {
             holder.clear();
         }
     }
-
-
 }

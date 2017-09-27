@@ -61,6 +61,10 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxjava:2.1.1'
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
 
+    // Picasso & Palette
+    compile 'com.github.florent37:picassopalette:2.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
     // Backwards compatibility from Java 8 features
     compile 'com.annimon:stream:1.1.8'
 

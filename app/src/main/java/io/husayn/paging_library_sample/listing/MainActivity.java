@@ -1,5 +1,6 @@
 package io.husayn.paging_library_sample.listing;
 
+
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
