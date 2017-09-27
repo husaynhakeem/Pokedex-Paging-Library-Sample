@@ -1,5 +1,5 @@
 # Pokedex - Paging Library Sample
-![alt text](https://github.com/Husaynhakeem/Paging-Library-Sample/blob/master/app/src/main/res/drawable/pokedex.png)
+![alt text](https://github.com/Husaynhakeem/Paging-Library-Sample/blob/master/app/src/main/res/drawable/pokedex_mini.png)
 
 Sample Pokedex Android application used to practice [Android's paging library](https://developer.android.com/topic/libraries/architecture/paging.html#overview).
 
@@ -17,6 +17,8 @@ Sample Pokedex Android application used to practice [Android's paging library](h
 
 
 ## Demo
+![alt text](https://github.com/Husaynhakeem/Paging-Library-Sample/blob/master/app/src/main/res/drawable/pokedex_portrait.png)
+![alt text](https://github.com/Husaynhakeem/Paging-Library-Sample/blob/master/app/src/main/res/drawable/pokedex_land.png)
 
 
 ## Want to contribute ?
