@@ -9,8 +9,7 @@ import android.content.Context;
 @Database(entities = {Pokemon.class}, version = 1)
 public abstract class PokemonDataBase extends RoomDatabase {
 
-
-    public static final String POKEMON_DB = "pokemon.db";
+    private static final String POKEMON_DB = "pokemon.db";
 
     public abstract PokemonDao pokemonDao();
 
@@ -22,6 +21,4 @@ public abstract class PokemonDataBase extends RoomDatabase {
         }
         return pokemonDB;
     }
-
-
 }
