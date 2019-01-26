@@ -1,7 +1,7 @@
 package io.husayn.paging_library_sample.listing;
 
 
-import android.arch.paging.PagedListAdapter;
+import androidx.paging.PagedListAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

@@ -1,10 +1,10 @@
 package io.husayn.paging_library_sample.data;
 
-import android.arch.paging.LivePagedListProvider;
-import android.arch.persistence.room.Dao;
-import android.arch.persistence.room.Insert;
-import android.arch.persistence.room.Query;
-import android.support.annotation.VisibleForTesting;
+import androidx.paging.LivePagedListProvider;
+import androidx.room.Dao;
+import androidx.room.Insert;
+import androidx.room.Query;
+import androidx.annotation.VisibleForTesting;
 
 import static java.lang.reflect.Modifier.PRIVATE;
 

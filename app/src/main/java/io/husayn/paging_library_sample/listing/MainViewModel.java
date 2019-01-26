@@ -1,9 +1,9 @@
 package io.husayn.paging_library_sample.listing;
 
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.ViewModel;
-import android.arch.paging.PagedList;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModel;
+import androidx.paging.PagedList;
 
 import io.husayn.paging_library_sample.PokemonApplication;
 import io.husayn.paging_library_sample.data.Pokemon;
