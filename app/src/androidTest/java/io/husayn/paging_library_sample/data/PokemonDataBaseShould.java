@@ -1,7 +1,7 @@
 package io.husayn.paging_library_sample.data;
 
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
+import androidx.test.InstrumentationRegistry;
 
 import org.junit.After;
 import org.junit.Before;
